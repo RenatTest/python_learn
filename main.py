@@ -36,11 +36,29 @@ message6 = f"Player {winner} won! Congrats!\nPlayer {loser} lost! Foo!"
 
 # Const
 
-MENU = """
+# MENU = 'Hello! Welcome to Tic Tac Toe game!\nRules: X and O takes turns marking the spaces in a 3*3 grid'
 
+MENU = """
 Hello! Welcome to tic tac toe game!
 Rules: X and O takes turns on the grid 3x3
-
 """
 
-print(MENU)
+# print(MENU)
+
+player = 'X'
+PLAYER_WON_MESSAGE = f'Player {player}, you won!'
+# print(PLAYER_WON_MESSAGE)
+
+# ---------- Lesson 3 input() ----------
+
+# control + C - end of program
+winner = input('Winner enter your sign >>> ') 
+loser = input('Loser enter your sign >>> ') 
+
+message = f"Player {winner} won! Congrats! Player {loser} lost! Foo!"  
+
+print(message)
+print(type(winner)) # str always
+
+sign = input('Please enter your sign:')
+print(f'Player {sign}, your turn!')
