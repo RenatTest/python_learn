@@ -71,3 +71,16 @@ if has_winner or count == 9:
     print('Game is over!')
 else:
     print('Keep playing!')
+
+# Practice 2
+
+choice = int(input("Player 1, what's your sign? [choose 1:X or 2:O]: "))
+    
+if choice == 1:
+    player1 = "X"
+    player2 = "O"
+elif choice == 2:
+    player1 = "O"
+    player2 = "X"
+else:
+    print('Not an option')    
