@@ -112,3 +112,6 @@ print(turn_number % 2 == 1) # True
 # Prctice
 choice = int(input("Player 1, what's your sign [choose 1:X or 2:O]: "))
 print(choice % 2 == 0)
+
+
+
