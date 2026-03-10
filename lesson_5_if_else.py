@@ -1,4 +1,4 @@
-# if / else
+# ---------- Lesson 5 if / else ----------
 
 age = int(input("What's your age?"))
 
