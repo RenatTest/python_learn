@@ -42,3 +42,17 @@ if BOARD[0][0] == BOARD[1][1] == BOARD[2][2] == player1:
 else: 
     print(f"Player {player1} not won")
 
+# Practice
+
+BOARD = [["", "", ""],["", "", ""],["", "", ""]]
+
+BOARD = [["X", " ", " "],
+        [" ", "X", " "],
+        [" ", " ", "X"]]
+
+player1 = "X"
+
+
+if BOARD[0][0] == BOARD[1][1] == BOARD[2][2] == player1:
+   print('Player 1 won!')
+
