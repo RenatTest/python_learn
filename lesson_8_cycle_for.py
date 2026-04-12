@@ -57,4 +57,20 @@ for i in range(len(BOARD)):
         break
     elif BOARD[0][i] == BOARD[1][i] == BOARD[2][i] == player2:
         print(f"Player {player2} won")
-        break    
+        break
+
+# Practice 
+
+POSITIONS =  {1: (0, 0), 2: (0, 1), 3: (0, 2), 4: (1, 0), 5: (1, 1), 6: (1, 2), 7: (2, 0), 8: (2, 1), 9: (2, 2)}    
+
+# Practice 2
+
+player = "X"
+
+BOARD2 = [["O", "O", "X"],
+        ["O", "X", "O"],
+        ["X", "X", "X"]]
+
+for row in range(3):
+    if BOARD2[row][0] == BOARD2[row][1] == BOARD2[row][2] == player:
+        print(f'Match in row {row}')
