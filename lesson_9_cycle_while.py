@@ -42,4 +42,29 @@ while True:
         break 
     else:
         print("Not an option, please choose 1 or 2")
+
+# Practice
+
+while True:
+    choice = input("Choose a cell number 1-9: ")
+    if not choice.isdigit():
+        print("Not an option, please enter numbers")
+        continue
+    else:
+        print(f'Cell {choice} selected')
+        break
+
+# Practice 2
+while True:
+    choice = input("Choose a cell number 1-9: ")
+    if not choice.isdigit():
+        print("Not an option, please enter numbers")
+        continue
+    choice = int(choice)    
+    if choice < 1 or choice > 9:
+        print("Not an option, please enter numbers 1-9")
+        continue
+    else:
+        print(f'Cell {choice} selected')
+        break        
            
