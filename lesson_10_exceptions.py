@@ -36,3 +36,19 @@ while True:
     else:
         print(f"player1: {player1}, player2: {player2}")
         break
+
+# Practice
+
+try:
+    choice = int(input("Choose 1-9 to pick the cell: "))
+except ValueError:
+    print("Not an option")
+
+# Practice 2
+
+try:
+    choice = int(input("Choose [1-9] to pick the cell: ")) 
+    if choice < 1 or choice > 9:
+        raise ValueError
+except ValueError:
+    print("Not an option")    
