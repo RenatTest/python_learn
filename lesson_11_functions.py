@@ -38,7 +38,7 @@ POSITIONS = {
     9: (2, 2),
 }
 
-POSITIONS.pop() # delete first key
+# POSITIONS.pop() # delete first key
 
 def display_board_coordinates():
     pattern = """
@@ -66,3 +66,42 @@ display_board()
 
 def make_choice(player1, player2, count):
     pass
+
+# Practice
+
+BOARD = [["X", "O", "X"],
+        ["O", "X", "O"],
+        ["X", "X", "X"]]
+
+player = "X"
+
+def check_diagonal(player):
+     # check main diagonal
+    if BOARD[0][0] == BOARD[1][1] == BOARD[2][2] == player:
+        return True
+    # check side diagonal    
+    elif BOARD[0][2] == BOARD[1][1] == BOARD[2][0] == player:
+        return True
+    else:
+        return False
+    
+player_won = check_diagonal(player)
+
+print(player_won)
+
+# Practice 2
+
+BOARD = [["", "", ""],
+        ["", "", ""],
+        ["", "", ""]]
+
+row = int(input("row: "))
+column = int(input("column: "))
+player = input("player's sign: ")
+
+def update_board(row, column, player):
+        BOARD[row][column] = player
+
+update_board(row, column, player)
+
+print(BOARD)
